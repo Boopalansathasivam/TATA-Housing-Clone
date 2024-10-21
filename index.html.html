@@ -1,0 +1,664 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="../css/tatahousing.css">
+    <link rel="shortcut icon" href="../images/tatafavicon.webp" type="image/xl-icon">
+    <title>TATA HOUSING</title>
+</head>
+<body>
+    <nav class="navbar navbar-expand-sm  navbar-dark nav1">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">TATA HOUSING</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="collapsibleNavbar">
+            <ul class="navbar-nav ms-auto dis">
+              <li class="nav-item">
+                <a class="mg" type="button" data-bs-toggle="offcanvas" data-bs-target="#demo" style="position: relative; top: 8px;">
+                  <i class="fa-solid fa-magnifying-glass fa-xl clr"></i> 
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="mnu" type="button" data-bs-toggle="offcanvas" data-bs-target="#demo1" style="position: relative; top: 8px;">
+                  <i class="fa-solid fa-bars fa-xl clr"></i> MENU
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">
+                    <img src="../images/tatafavicon.webp" alt="Avatar Logo" style="width:30px;" class="rounded-pill"> 
+
+                </a>
+              </li>    
+            </ul>
+          </div>
+        </div>
+      </nav>
+      <!-- offcanvas1 -->
+       <section>
+        <div class="offcanvas offcanvas-top demo" id="demo">
+          <div class="offcanvas-header">
+           
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas"></button>
+          </div>
+          <div class="offcanvas-body">
+           <form action="">
+            <input list="list" name="areas" id="" class="ip" placeholder="Type Projects" required>
+            <datalist id="list">
+              <option value="Avenida, Kolkata
+              "></option>
+              <option value="Amantra, Mumbai
+              "></option>
+              <option value="Eureka Park, Noida
+              "></option>
+              <option value="Gurgaon Gateway, Gurugram
+              "></option>
+              <option value="Serein, Thane
+              "></option>
+              <option value="New Haven, Bengaluru
+              "></option>
+              <option value="Santorini, Chennai
+              "></option>
+              <option value="New Haven Ribbon Walk, Chennai
+              "></option>
+              <option value="Crescent Enclave, Chennai
+              "></option>
+              <option value="New Haven Bahadurgarh, Delhi NCR
+              "></option>
+              <option value="New Haven Boisar II, Mumbai
+              "></option>
+              <option value="Shubh Griha, Mumbai
+              "></option>
+              <option value="Inora Park, Pune
+              "></option>
+              <option value="88 EAST, Kolkata"></option>
+          </datalist>
+          <br>
+          <br>
+          <button type="submit" class=" btn-primary bet">GO  <i class="fa-solid fa-arrow-right fa-lg"></i></button>
+           </form>
+           <br>
+           <h3>OR</h3>
+           <br>
+           <div class="container-fluid">
+            <div class="row">
+              <div class="col-sm-6">
+                <h4>PROPERTY TYPE</h4>
+                <br>
+                <li><b>Residential</b></li>
+                <br>
+                <h4>BUDGET</h4>
+                <form class="" >
+                  <input type="range" id="budget" name="budget" min="3500000" max="59900000" step="1000000" value="3500000" oninput="this.nextElementSibling.value = this.value" class=" form-control ran">
+                  <output class="range-value">35,00000</output>
+                </form>
+      
+              </div>
+              <div class="col-sm-6">
+                <h4>LOCATION</h4>
+               <form action="">
+                <input list="lists" name="nmd" id="" class="ip" placeholder="Select City " required>
+                <datalist id="lists">
+                   <option value="Malé
+                   "></option>
+                   <option value="Ahmedabad
+                   "></option>
+                   <option value="Bengaluru
+                   "></option>
+                   <option value="Bhubaneswa"></option>
+                   <option value="Chennai
+                   "></option>
+                   <option value="Delhi NCR
+                   "></option>
+                   <option value="Goa
+                   "></option>
+                   <option value="Gurugram
+                   "></option>
+                   <option value="Kasauli
+                   "></option>
+                   <option value="Kolkata
+                   "></option>
+                   <option value="Lonavala
+                   "></option>
+                   <option value="Noida
+                   "></option>
+                   <option value="Mumbai
+                   "></option>
+                   <option value="Pune
+                   "></option>
+                </datalist>
+               </form>
+      
+              </div>
+             
+              <div class="container-fluid ">
+                <br>
+                <br>
+                <h4>BEDROOM</h4>
+                <br>
+                <form action="" class="bdrm">
+                  <div class="form-check">
+                    <input type="checkbox" class="form-check-input" id="check1" name="option1" value="something" checked>
+                    <label class="form-check-label" for="check1">others</label>
+                  </div>
+                  <div class="form-check">
+                    <input type="checkbox" class="form-check-input" id="check2" name="option2" value="something">
+                    <label class="form-check-label" for="check2">1RK</label>
+                  </div>
+                  <div class="form-check">
+                    <input type="checkbox" class="form-check-input">
+                    <label class="form-check-label">1 BHK</label>
+                  </div>
+                  <div class="form-check">
+                    <input type="checkbox" class="form-check-input" id="check1" name="option1" value="something" checked>
+                    <label class="form-check-label" for="check1">1.5 BHK</label>
+                  </div>
+                  <div class="form-check">
+                    <input type="checkbox" class="form-check-input" id="check2" name="option2" value="something">
+                    <label class="form-check-label" for="check2">2 BHK</label>
+                  </div>
+                  <div class="form-check">
+                    <input type="checkbox" class="form-check-input">
+                    <label class="form-check-label">2.5 BHK</label>
+                  </div>
+                  <div class="form-check">
+                    <input type="checkbox" class="form-check-input" id="check1" name="option1" value="something" checked>
+                    <label class="form-check-label" for="check1">3 BHK</label>
+                  </div>
+                  <div class="form-check">
+                    <input type="checkbox" class="form-check-input" id="check2" name="option2" value="something">
+                    <label class="form-check-label" for="check2">4 BHK</label>
+                  </div>
+                  <div class="form-check">
+                    <input type="checkbox" class="form-check-input">
+                    <label class="form-check-label">5 BHK DUPLEX</label>
+                  </div>
+                  <div class="form-check">
+      
+                    <input type="checkbox" class="form-check-input">
+                    <label class="form-check-label">DUPLEX</label>
+                  </div>
+                  <div class="form-check">
+                    <input type="checkbox" class="form-check-input">
+                    <label class="form-check-label">Penthouse</label>
+                  </div>
+                  <div class="form-check">
+                    <input type="checkbox" class="form-check-input">
+                    <label class="form-check-label">Executive Apartments</label>
+                  </div>
+                </form>
+               <center> <button type="submit" class="btn btn-primary mt-3 bet2">Search <i class="fa-solid fa-arrow-right fa-lg"></i>  </button></center>
+              </div>
+            </div>
+           </div>
+          </div>
+        </div>
+      
+       </section>
+       <!-- offcanvas2 -->
+        <section>
+          <div class="offcanvas offcanvas-top" id="demo1">
+            <div class="offcanvas-header ">
+              <h1 class="offcanvas-title hdr">RESIDENTIAL</h1>
+              <button type="button" class="btn-close ctag" data-bs-dismiss="offcanvas" style="color: white;"></button>
+            </div>
+           
+             <div class="row">
+              <div class="col-sm-9">
+                <!-- Nav pills -->
+              
+                 
+            <ul class="nav nav-pills ul" role="tablist">
+              <li class="nav-item">
+                <a class="nav-link active fw" data-bs-toggle="pill" href="#home">Current</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link fw" data-bs-toggle="pill" href="#menu1">Completed</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link fw" data-bs-toggle="pill" href="#menu2">Cities</a>
+              </li>
+            </ul>
+            <hr>
+          
+            <!-- Tab panes -->
+            <div class="tab-content">
+              <div id="home" class="container tab-pane active"><br>
+               <div class="row">
+                <div class="col-sm-4">
+                <li class="li">Amantra , <a href="" class="aref">Mumbai</a></li>
+                <br>
+                <li class="li">Myst , <a href="" class="aref">Kasauli</a></li>
+                <br>
+                <li class="li">Riva ,<a href="" class="aref">Bengaluru</a></li>
+                <br>
+                <li class="li">88 EAST ,<a href="" class="aref">Kolkata</a></li>
+                </div>
+                <div class="col-sm-4">
+                  <li class="li">LuxaOne , <a href="" class="aref">Male</a></li> <br>
+                  <li class="li">Sense 66 , <a href="" class="aref">Pune</a></li> <br>
+                  <li class="li">Serein , <a href="" class="aref">Thane</a></li> <br>
+                </div>
+                <div class="col-sm-4">
+                  <li class="li">Luxera <a href="" class="aref">Thane</a></li> <br>
+                  <li class="li">New Haven <a href="" class="aref">Bengaluru</a></li> <br>
+                  <li class="li">The Promont Phanse II <a href="" class="aref">Bengaluru</a></li> <br>
+          
+                </div>
+                 </div>
+                </div>
+                  <div id="menu1" class="container tab-pane fade"><br>
+                <div class="row ">
+                  <div class="col-sm-4">
+                  <li class="li">Ariana , <a href="" class="aref">Bhubaneswar</a></li>
+                  <br>
+                  <li class="li">Eureka Park , <a href="" class="aref">Noida</a></li>
+                  <br>
+                  <li class="li">New Haven Boisar I ,<a href="" class="aref">Mumbai</a></li>
+                  <br>
+                  <li class="li">Raagam ,<a href="" class="aref">Bengaluru</a></li>
+                  </div>
+                  <div class="col-sm-4">
+                    <li class="li">Avenida , <a href="" class="aref">kolkata</a></li> <br>
+                    <li class="li">La Vida , <a href="" class="aref">Gurugram</a></li> <br>
+                    <li class="li">Primanti , <a href="" class="aref">Gurugram</a></li> <br>
+                  </div>
+                  <div class="col-sm-4">
+                    <li class="li">Prive <a href="" class="aref">Lonavala</a></li> <br>
+                    <li class="li">Rio De Goa <a href="" class="aref">Goa</a></li> <br>
+                    <li class="li">Swaram <a href="" class="aref">Bengaluru</a></li> <br>
+            
+                  </div>
+                 </div>
+              </div>
+              <div id="menu2" class="container tab-pane fade"><br>
+                <div class="row">
+                  <div class="col-sm-4">
+                  <li class="li"><a href="" class="aref">Bhubaneswar</a></li>
+                  <br>
+                  <li class="li"> <a href="" class="aref">Noida</a></li>
+                  <br>
+                  <li class="li"> <a href="" class="aref">Mumbai</a></li>
+                  <br>
+                  <li class="li"><a href="" class="aref">Pune</a></li>
+                  <br>
+                  <li class="li"> <a href="" class="aref">Mumbai</a></li>
+                  <br>
+                  <li class="li"><a href="" class="aref">Bengaluru</a></li>
+                  </div>
+                  <div class="col-sm-4">
+                    <li class="li"> <a href="" class="aref">kolkata</a></li> <br>
+                    <li class="li"><a href="" class="aref">Gurugram</a></li> <br>
+                    <li class="li"><a href="" class="aref">Chennai</a></li> <br>
+                    <li class="li"> <a href="" class="aref">kolkata</a></li> <br>
+                    <li class="li"><a href="" class="aref">Delhi NCR</a></li> <br>
+                    <li class="li"><a href="" class="aref">Dabolim</a></li> 
+                  </div>
+                  <div class="col-sm-4">
+                    <li class="li"><a href="" class="aref">Lonavala</a></li> <br>
+                    <li class="li"> <a href="" class="aref">Goa</a></li> <br>
+                    <li class="li"> <a href="" class="aref">Bengaluru</a></li> <br>
+                    <li class="li"> <a href="" class="aref">kolkata</a></li> <br>
+                    <li class="li"><a href="" class="aref">Vasind</a></li> <br>
+                    <li class="li"><a href="" class="aref">Ahmedabad</a></li> 
+            
+                  </div>
+                 </div>
+              </div>
+            </div>
+              </div>
+              <div class="col-sm-3 box">
+                <div class="di">
+                  <center class="cent"><h2>TATA HOUSING</h2></center>
+                  <h4 class="ls">RESIDENTIAL</h4>
+                  <div class="lis">
+                    <li class="uls">Blog</li> <br>
+                  <li class="uls">Customer Support</li> <br>
+                  <li class="uls"> Contact Us</li> <br>
+                  <ul class="ics">
+                    <li><a href=""><i class="fa-brands fa-facebook fa-xl" style="color: #ffffff;"></i></a></li>
+                    <li><a href=""><i class="fa-brands fa-twitter fa-xl" style="color: #ffffff;"></i></a></li>
+                    <li><a href=""><i class="fa-brands fa-instagram fa-xl" style="color: #ffffff;"></i></a></li>
+                    <li><a href=""><i class="fa-brands fa-linkedin fa-xl" style="color: #ffffff;"></i></a></li>
+                    <li><a href=""><i class="fa-brands fa-youtube fa-xl" style="color: #ffffff;"></i></a></li>
+                  </ul>
+                  </div>
+                </div>
+              </div>
+             </div>
+             
+            </div>
+          <!-- </div> -->
+          
+        </section>
+        <section class="">
+            <!-- Carousel -->
+<div id="DEMO" class="carousel slide" data-bs-ride="carousel">
+
+  <!-- Indicators/dots -->
+  <div class="carousel-indicators cii">
+    <button type="button" data-bs-target="#DEMO" data-bs-slide-to="0" class="active"></button>
+    <button type="button" data-bs-target="#DEMO" data-bs-slide-to="1"></button>
+    <button type="button" data-bs-target="#DEMO" data-bs-slide-to="2"></button>
+    <button type="button" data-bs-target="#DEMO" data-bs-slide-to="3"></button>
+    <button type="button" data-bs-target="#DEMO" data-bs-slide-to="4"></button>
+    <button type="button" data-bs-target="#DEMO" data-bs-slide-to="5"></button>
+    <button type="button" data-bs-target="#DEMO" data-bs-slide-to="6"></button>
+  </div>
+  
+  <!-- The slideshow/carousel -->
+  <div class="carousel-inner imgdiv">
+    <div class="carousel-item active">
+      <img src="../images/tata slide1.webp" alt="Los Angeles" class="d-block" style="width:100%">
+    </div>
+    <div class="carousel-item">
+      <img src="../images/tataslide2.webp" alt="Chicago" class="d-block" style="width:100%">
+    </div>
+    <div class="carousel-item">
+      <img src="../images/tataslide3.webp" alt="New York" class="d-block" style="width:100%">
+    </div>
+    <div class="carousel-item ">
+      <img src="../images/tataslide4.webp" alt="Los Angeles" class="d-block" style="width:100%">
+    </div>
+    <div class="carousel-item">
+      <img src="../images/tataslide5.webp" alt="Chicago" class="d-block" style="width:100%">
+    </div>
+    <div class="carousel-item">
+      <img src="../images/tataslide6.webp" alt="New York" class="d-block" style="width:100%">
+    </div>
+    <div class="carousel-item">
+      <img src="../images/tataslide7.webp" alt="New York" class="d-block" style="width:100%">
+    </div>
+  </div>
+  
+  <!-- Left and right controls/icons -->
+  <button class="carousel-control-prev" type="button" data-bs-target="#DEMO" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon"></span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#DEMO" data-bs-slide="next">
+    <span class="carousel-control-next-icon"></span>
+  </button>
+</div>
+        </section>
+        <div class="container-fluid sd">
+          <center><a href="" class="sd1"><h5><b>scroll down</b></h5></a></center>
+        </div>
+        <br>
+        <section>
+          <div class="container-fluid div2">
+            <div class="row">
+             <div class="col-sm-3 since">
+               <img src="../images/tata since1984 2.jpg" alt="" style="width: 150px;">
+             </div>
+             <div class="col-sm-7 content">
+               
+                 <p class="topic">TATA Housing: Real Estate Developer in India <br>
+                   ABOUT TATA Housing</p>
+                   <h3>Providing quality life spaces through <br> continuous innovation</h3>
+                   <br>
+                   <p>Tata Housing is one of the fastest growing real estate companies in India today. Its primary business is development of residential, commercial and retail properties.</p>
+                   <div class="row rows">
+                     <div class="col-sm-4 cc">
+                       <h5 class="fws">over</h5>
+                        <p class="no">100+</p>
+                        <h5 class="fws">Awards Won</h5>
+                        <br>
+                        <br>
+                        <br>
+                        <h5 class="fws">More Than</h5>
+                        <p class="no">26,620</p>
+                        <h5 class="fws">Registered <br> Customers</h5>
+           
+                     </div>
+                     <div class="col-sm-4 cc">
+                       <h5 class="fws">Over</h5>
+                        <p class="no">35+</p>
+                        <h5 class="fws">Years of building <br> Trust</h5>
+                       <br>
+                       <br>
+                       <h5 class="fws">Over</h5>
+                        <p class="no">3.34</p>
+                        <h5 class="fws">Million Sq.m <br>under <br> development</h5>
+                     </div>
+                     <div class="col-sm-4 cc">
+                       <h5 class="fws">projects</h5>
+                        <p class="no">31</p>
+                        <h5 class="fws">completed</h5>
+                        <br>
+                        <br>
+                        <br>
+                        <h5 class="fws emp">employes</h5>
+                        <p class="no emp">250+</p>
+                     </div>
+                   </div>
+             
+             </div>
+             <div class="col-sm-2 ov">
+               <img src="../images/tata overview.jpeg" alt=""  style="height: 680px;">
+              
+             </div>
+            </div>
+            <button class="ttn">Read More <i class="fa-solid fa-arrow-right fa-lg right" ></i></button>
+           
+           </div>
+        </section>
+        <div class="container-fluid">
+          <center>
+            <h4 class="cc">Featured Residential Projects</h4>
+            <h1><b>We build value. We build you.</b></h1>
+            <p>With our projects spanning over the spheres of residential, commercial and corporate construction, <br> we, at Tata Housing, aim to deliver excellence and comfort, with a touch of fairness and <br> transparency.</p>
+            <h4 class="cc">RESIDENTIAL</h4>
+          </center>
+          <br>
+        </div>
+        <section class="">
+          <!-- Carousel -->
+      <div id="DEMO1" class="carousel slide" data-bs-ride="carousel">
+      
+      <!-- Indicators/dots -->
+      <div class="carousel-indicators cii2">
+      <button type="button" data-bs-target="#DEMO1" data-bs-slide-to="0" class="active"></button>
+      <button type="button" data-bs-target="#DEMO1" data-bs-slide-to="1"></button>
+      <button type="button" data-bs-target="#DEMO1" data-bs-slide-to="2"></button>
+      <button type="button" data-bs-target="#DEMO1" data-bs-slide-to="3"></button>
+      <button type="button" data-bs-target="#DEMO1" data-bs-slide-to="4"></button>
+      <button type="button" data-bs-target="#DEMO1" data-bs-slide-to="5"></button>
+      <button type="button" data-bs-target="#DEMO1" data-bs-slide-to="6"></button>
+      <button type="button" data-bs-target="#DEMO1" data-bs-slide-to="7"></button>
+      <button type="button" data-bs-target="#DEMO1" data-bs-slide-to="8"></button>
+      <button type="button" data-bs-target="#DEMO1" data-bs-slide-to="9"></button>
+      
+      </div>
+      
+      <!-- The slideshow/carousel -->
+      <div class="carousel-inner imgdiv1">
+        <button class="clsbt">see project <i class="fa-solid fa-arrow-right fa-lg"></i></button>
+      <div class="carousel-item active">
+      <img src="../images/tr1.jpeg" alt="Los Angeles" class="d-block imgs " >
+      
+      </div>
+      <div class="carousel-item">
+      <img src="../images/tr2.jpeg" alt="Chicago" class="d-block imgs" >
+      </div>
+      <div class="carousel-item">
+      <img src="../images/tr3.jpeg" alt="New York" class="d-block imgs" >
+      </div>
+      <div class="carousel-item ">
+      <img src="../images/tr4.jpeg" alt="Los Angeles" class="d-block imgs" >
+      </div>
+      <div class="carousel-item">
+      <img src="../images/tr5.jpeg" alt="Chicago" class="d-block imgs">
+      </div>
+      <div class="carousel-item">
+      <img src="../images/tr6.jpeg" alt="New York" class="d-block imgs" >
+      </div>
+      <div class="carousel-item">
+      <img src="../images/tr7.jpeg" alt="New York" class="d-block imgs" >
+      </div>
+      <div class="carousel-item">
+        <img src="../images/tr8.jpeg" alt="Chicago" class="d-block imgs" >
+        </div>
+        <div class="carousel-item">
+        <img src="../images/tr9.jpeg" alt="New York" class="d-block imgs" >
+        </div>
+        <div class="carousel-item">
+        <img src="../images/tr10.jpeg" alt="New York" class="d-block imgs" >
+        </div>
+        
+      </div>
+      
+      <!-- Left and right controls/icons -->
+      <div class="container-fluid ikons" >
+        <button class="carousel-control-prev pre" type="button" data-bs-target="#DEMO1" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon "></span>
+          </button>
+          <button class="carousel-control-next nxt" type="button" data-bs-target="#DEMO1" data-bs-slide="next">
+          <span class="carousel-control-next-icon"></span>
+          </button>
+      </div>
+      </div>
+      </section>
+      <section class="div3">
+        <div class="container-fluid d3">
+          <h4 class="cc">Projects by Cities</h4>
+          <!-- <br> -->
+          <p >
+            <span class="s1">Ahmedabad|</span>
+              <span class="s1">Bengaluru|</span> 
+              <span class="s1"> Bhubaneswar |</span>
+              <span class="s1"> Chennai|</span>
+              <span class="s1"> Delhi NCR    |</span>
+              <span class="s1">  Goa    |</span>
+              <span class="s1"> Gurugram    |</span>
+              <span class="s1">Kasauli    |</span>
+              <span class="s1"> Kolkata    |</span>
+              <span class="s1"> Lonavala    |</span>
+              <span class="s1"> Noida    |</span>
+              <span class="s1"> Mumbai    |</span>
+              <span class="s1">Pune    |</span>
+              <span class="s1">Vasind</span>
+            </p>
+            <br>
+            <br>
+            <h4 class="cc">Residential Properties</h4>
+            <!-- <br> -->
+            <p>
+              <span class="s1">Amantra, Mumbai|</span>
+              <span class="s1"> Ariana, Bhubaneswar|</span>
+              <span class="s1"> Crescent Enclave, Chennai|</span>
+              <span class="s1">Avenida, Kolkata|</span>
+              <span class="s1"> Eureka Park, Noida|</span>
+              <span class="s1">Gurgaon Gateway, Gurugram|</span>
+              <span class="s1"> Inora Park, Pune|</span>
+      
+            </p>
+            <br>
+            <p>
+              <span class="s1">The Promont, Bengaluru|</span>
+              <span class="s1"> Swaram, Bengaluru|</span>
+              <span class="s1">  Shubh Griha, Mumbai|</span>
+              <span class="s1">Serein, Thane|</span>
+              <span class="s1">Santorini, Chennai|</span>
+              <span class="s1">Riva, Bengaluru|</span>
+              <span class="s1"> Rio De Goa, Goa|</span>
+            </p>
+            <br>
+            <p>
+              <span class="s1"> Raisina Residency, Gurugram|</span>
+              <span class="s1">Raagam, Bengaluru|</span>
+              <span class="s1"> Privé, Lonavala|</span>
+              <span class="s1">Primanti, Gurugram|</span>
+              <span class="s1">New Haven Ribbon Walk, Chennai|</span>
+              <span class="s1">New Haven Compact and Shubh Griha, Ahmedabad|</span>
+            </p>
+            <br> 
+           <p>
+              <span class="s1"> New Haven Boisar I, Mumbai|</span>
+              <span class="s1"> New Haven Bahadurgarh, Delhi NCR|</span>
+              <span class="s1"> New Haven, Bengaluru|</span>
+              <span class="s1">Sense 66, Pune|</span>
+              <span class="s1">Myst, Kasauli|</span>
+              <span class="s1">LuxaOne, Malé|</span>
+              <span class="s1">La Vida, Gurugram|</span>
+            </p>
+            <br>
+            
+          
+            <p>
+              <span class="s1">La Montana and La Montana Phase II, Pune|</span>
+              <span class="s1">88 EAST, Kolkata|</span>
+              <span class="s1">  New Haven Bahadurgarh Phase-III, Delhi NCR|</span>
+              <span class="s1">The Promont Phase II, Bengaluru|</span>
+      
+            </p>
+        </div>
+       </section>
+       <section class="div4">
+        <div class="container-fluid">
+          <div class="row">
+            <div class="col-sm-2">
+              <h4 class="cpt">corporate</h4>
+              <br>
+              <p class="cpl">about us</p>
+              <p class="cpl"> board of directors</p>
+              <p class="cpl">management team</p>
+              <p class="cpl">awards & recognition</p>
+              <p class="cpl">TATA code of conduct</p>
+              <p class="cpl">careers</p>
+              <p class="cpl">inverstor info</p>
+            </div>
+            <div class="col-sm-2">
+              <h4 class="cpt">others</h4>
+              <br>
+              <p class="cpl">corporate sustainability</p>
+              <p class="cpl">blogs</p>
+              <p class="cpl">disclaimers</p>
+              <p class="cpl">privacy policy</p>
+              <p class="cpl">sitemap</p>
+              <p class="cpl">FAQ</p>
+              <p class="cpl">residential properties</p>
+              <p class="cpl">news</p>
+            </div>
+            <div class="col-sm-2">
+              <h4 class="cpt">customer relations</h4>
+              <br>
+              <p class="cpl">NRI buyers guide</p>
+              <p class="cpl">become a partner</p>
+              <p class="cpl">customer support</p>
+            </div>
+            <div class="col-sm-2">
+              <h4 class="cpt">make online payments</h4>
+              <br>
+              <p class="cpl">pay your installments</p>
+              <p class="cpl">pay your maintenance</p>
+              <p class="cpl">contractor payments</p>
+            </div>
+            <div class="col-sm-2">
+              <h4 class="cpt">corporate</h4>
+              <br>
+              <p class="cpl">EMI calculator</p>
+              <p class="cpl">currancy convertor</p>
+            </div>
+            <div class="col-sm-2">
+              <h4 class="cpt">social network</h4>
+              <br>
+              <ul class="ftr">
+                <li><a href=""><i class="fa-brands fa-facebook fa-xl" style="color: #ffffff;"></i></a></li>
+                <li><a href=""><i class="fa-brands fa-twitter fa-xl" style="color: #ffffff;"></i></a></li>
+                <li><a href=""><i class="fa-brands fa-instagram fa-xl" style="color: #ffffff;"></i></a></li>
+                <li><a href=""><i class="fa-brands fa-linkedin fa-xl" style="color: #ffffff;"></i></a></li>
+                <li><a href=""><i class="fa-brands fa-youtube fa-xl" style="color: #ffffff;"></i></a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+       </section>
+      
+        
+</body>
+</html>
